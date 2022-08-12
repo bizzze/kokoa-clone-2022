@@ -29,10 +29,10 @@
         <p class ="welcome-header__text">If you have a KokoaTalk Account, log in with your email or phone number.</p>
     </header>
 
-    <form id="login-form">
-        <input type = "text" placeholder="Email or phone number" required />
-        <input type ="password" placeholder="Password" required />
-        <input type="submit" value="Log in"/>
+    <form action="friends.html" method="get" id="login-form">
+        <input name="username" type = "text" placeholder="Email or phone number" required />
+        <input name="password" type ="password" placeholder="Password" minlength="8" required/>
+        <input type="submit" value="Log in" />
         <input type="submit" value="Sign up"/>
         <a href="#">Find Kokoa Account or Password</a>
     </form>
