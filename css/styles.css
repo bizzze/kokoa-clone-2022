@@ -10,6 +10,7 @@
 @import "components/badge.css";
 @import "components/icon-row.css";
 @import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
 
 /*screens*/
 @import "screens/login.css";
@@ -23,8 +24,9 @@
 body {
     color:#2e363e;
     font-family: 'Open Sans', sans-serif;
-    height:300vh;
+    
 }
 .main-screen{
     padding:0px var(--horizontal-space);
+    height:250vh;
 }

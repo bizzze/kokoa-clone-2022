@@ -86,3 +86,29 @@
 .open-post__heart-count span{
     margin-left:3px;
 }
+
+@keyframes heartbeat{
+    0%{
+        color:white;
+        transform:none;
+
+    }
+    50%{
+        color:tomato;
+        transform:scale(1.5);
+
+    }
+    100%{
+        color:white;
+        transform:none;
+
+    }
+}
+
+.open-post__heart-count:hover i{
+    will-change: transform;  /* willchange는 그래픽카드를 이요해서 애니메이션을 가속화해
+    브라우저에게 변화할 것에 대한 언지를 주면서 좀 더 깔끔하고 이쁘게 애니가 작동할 수 있도록
+    해주는 역할을 해 -- 하지만, 매번 사용하는 것은 아니야!
+    */
+    animation: heartbeat 1s linear infinite;
+}

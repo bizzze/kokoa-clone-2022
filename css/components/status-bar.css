@@ -4,7 +4,8 @@
     width:100%;
     display: flex;
     justify-content: center;
-    padding: 5px 3px;   
+    padding: 5px 3px; 
+    background-color:white;  
 }
 
 .status-box__column{
